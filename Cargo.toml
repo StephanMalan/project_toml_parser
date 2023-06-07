@@ -1,8 +1,8 @@
 [package]
 name = "project_toml_parser"
-version = "0.1.0"
+version = "0.1.1"
 categories = ["command-line-utilities"]
-description = "A command-line utility that returns the project name configured in TOML file."
+description = "A command-line utility that returns the project details configured in TOML file."
 repository = "https://github.com/StephanMalan/project_toml_parser"
 license = "MIT"
 authors = ["Stephan Malan <stephanmalan.rob@gmail.com>"]
@@ -14,6 +14,8 @@ include = ["**/*.rs", "Cargo.toml", "LICSENSE", "README.md"]
 [dependencies]
 clap = {version = "4.1.4", features = [ "derive" ]}
 serde = {version = "1.0.152", features = [ "derive" ]}
+serde_json = "1.0.96"
+strfmt = "0.2.4"
 toml = "0.7.1"
 
 [[bin]]
